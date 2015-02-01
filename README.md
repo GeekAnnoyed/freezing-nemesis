@@ -18,7 +18,7 @@ https://www.pjrc.com/teensy/td_flightsim.html
 
 
 ![alt text](https://raw.githubusercontent.com/xpd259/freezing-nemesis/master/teenyGPS_bb.png "Circuit Layout")
-
+just a vague idea of what it should look like as fritzing doesn't have the correct parts ;)
 
 
 # Parts List
