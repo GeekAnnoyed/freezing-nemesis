@@ -3,7 +3,9 @@
 ## Teensy Interface to the GPS  on xplane 10.31
 
 ** WARNING THIS CODE IS AWFUL! **
+
 I take no resonsiblity for killing for your Teensy, kittens or making you crash in XPlane :)
+
 ** WARNING THIS CODE IS AWFUL **
 
 
