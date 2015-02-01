@@ -17,7 +17,7 @@ https://www.pjrc.com/teensy/td_flightsim.html
 
 
 
-![alt text](https://raw.githubusercontent.com/xpd259/freezing-nemesis/master/teenyGPS_bb.png "Circuit Layout")
+![alt text](https://raw.githubusercontent.com/xpd259/freezing-nemesis/master/Images/teenyGPS_bb.png "Circuit Layout")
 just a vague idea of what it should look like as fritzing doesn't have the correct parts ;)
 
 
@@ -39,4 +39,4 @@ just a vague idea of what it should look like as fritzing doesn't have the corre
 
 Prototype 
 
-![alt text](https://raw.githubusercontent.com/xpd259/freezing-nemesis/master/IMG_20150131_171303.jpg "Circuit Layout")
+![alt text](https://raw.githubusercontent.com/xpd259/freezing-nemesis/master/Images/IMG_20150131_171303.jpg "Circuit Layout")
