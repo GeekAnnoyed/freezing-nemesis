@@ -17,8 +17,10 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
-    
-    
+
+Dick William Thomas
+www.dick-thomas.co.uk
+xpd259@gmail.com
 
 */
 
@@ -40,7 +42,8 @@ const int BUTTON_CDI = 21;
 const int BUTTON_OBS = 22;
 const int BUTTON_MSG = 23;
 const int BUTTON_FLP = 12;
-
+const int BUTTON_VNAV = 11;
+const int BUTTON_PROC = 10;
 
 ClickButton button_ent(BUTTON_ENT, LOW, CLICKBTN_PULLUP);
 ClickButton button_crsr(BUTTON_CRSR, LOW, CLICKBTN_PULLUP);
@@ -53,6 +56,8 @@ ClickButton button_CDI(BUTTON_CDI, LOW, CLICKBTN_PULLUP);
 ClickButton button_OBS(BUTTON_OBS, LOW, CLICKBTN_PULLUP);
 ClickButton button_MSG(BUTTON_MSG, LOW, CLICKBTN_PULLUP);
 ClickButton button_FLP(BUTTON_FLP, LOW, CLICKBTN_PULLUP);
+ClickButton button_FLP(BUTTON_VNAV, LOW, CLICKBTN_PULLUP);
+ClickButton button_FLP(BUTTON_PROC, LOW, CLICKBTN_PULLUP);
 
 const int coarsedn= 5;
 const int coarseup= 6;
@@ -78,6 +83,8 @@ FlightSimCommand CDI;
 FlightSimCommand OBS;
 FlightSimCommand MSG;
 FlightSimCommand FLP;
+FlightSimCommand VNAV;
+FlightSimCommand PROC;
 
 
 // reset endcoders to 0
@@ -88,13 +95,13 @@ long enc2 = 0;
 
 
 void setup(){
-  Serial.begin(38400);  //debug serial output
+  // Serial.begin(38400);  //debug serial output
   // debounce and pin setup
   pinMode(13,OUTPUT); //debug to led 13
   pinMode(BUTTON_ENT, INPUT_PULLUP);
   button_ent.debounceTime   = 20;   // Debounce timer in ms
 
-// XPlane Refs
+// XPlane Refs to find more in commands inside the xplane plugins folder
   COM1CoarseUp = XPlaneRef("sim/GPS/g430n1_page_up");
   COM1CoarseDown = XPlaneRef("sim/GPS/g430n1_page_dn");
   COM1FineUp = XPlaneRef("sim/GPS/g430n1_chapter_up");
@@ -110,6 +117,8 @@ void setup(){
   MSG = XPlaneRef("sim/GPS/g430n1_msg");  
   FLP = XPlaneRef("sim/GPS/g430n1_fpl");
   DIRECT = XPlaneRef("sim/GPS/g430n1_direct");
+  VNAV = XPlaneRef("sim/GPS/g430n1_vnav ");
+  PROC = XPlaneRef("sim/GPS/g430n1_proc");
   
 }
 
@@ -208,6 +217,18 @@ button_rngdn.Update();
   button_FLP.Update();
   if(button_FLP.clicks == 1){
     FLP.once();
+    //Serial.println("FLP"); //debuging code
+  }
+
+  button_VNAV.Update();
+  if(button_VNAV.clicks == 1){
+    VNAV.once();
+    //Serial.println("FLP"); //debuging code
+  }
+
+  button_PROC.Update();
+  if(button_PROC.clicks == 1){
+    PROC.once();
     //Serial.println("FLP"); //debuging code
   }
 
