@@ -18,7 +18,7 @@ https://www.pjrc.com/teensy/td_flightsim.html
 
 
 ![alt text](https://raw.githubusercontent.com/xpd259/freezing-nemesis/master/teenyGPS_bb.png "Circuit Layout")
-
+just a vague idea of what it should look like as fritzing doesn't have the correct parts ;)
 
 
 # Parts List
@@ -27,3 +27,4 @@ https://www.pjrc.com/teensy/td_flightsim.html
 * 1 Dual Rotary encoders with Push Button 
 or
 * 2 Single Rotary encoders with 1 with push button
+* teensy 3.1 Board https://www.pjrc.com/store/teensy31.html
