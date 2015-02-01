@@ -1,6 +1,11 @@
 # freezing-nemesis
 
-# Teensy Interface to the GPS  on xplane 10.31
+## Teensy Interface to the GPS  on xplane 10.31
+
+** WARNING THIS CODE IS AWFUL! **
+I take no resonsiblity for killing for your Teensy, kittens or making you crash in XPlane :)
+** WARNING THIS CODE IS AWFUL **
+
 
 My nemesis on XPlane 10 is using the dials on the GPS to try to enter data. so I've made a hardware interface to the gps1 module.
 
@@ -21,7 +26,7 @@ https://www.pjrc.com/teensy/td_flightsim.html
 just a vague idea of what it should look like as fritzing doesn't have the correct parts ;)
 
 
-# Parts List
+## Parts List
 
 * 12 Buttons Non lactching type
 * 1 Dual Rotary encoders with Push Button 
