@@ -120,13 +120,13 @@ void loop(){
   if (enc1 > com1_enc + RESOLUTION)
   {
     COM1CoarseDown.once();
-    Serial.println("Coarse Down"); //debuging code
+    //Serial.println("Coarse Down"); //debuging code
     com1_enc = enc1;
   }
   else if (enc1 < com1_enc - RESOLUTION)
   {
     COM1CoarseUp.once();
-    Serial.println("Coarse UP!"); //debuging code
+    //Serial.println("Coarse UP!"); //debuging code
     com1_enc = enc1;
   }
 
@@ -134,14 +134,14 @@ void loop(){
   if (enc2 > com2_enc + RESOLUTION)
   {
     COM1FineDown.once();
-    Serial.println("Fine Down!"); //debuging code
+//   Serial.println("Fine Down!"); //debuging code
     com2_enc = enc2;
   }
   else if (enc2 < com2_enc - RESOLUTION)
   {
 
     COM1FineUp.once();
-    Serial.println("Fine UP!"); //debuging code
+//    Serial.println("Fine UP!"); //debuging code
     com2_enc = enc2;
   }
 
@@ -157,58 +157,58 @@ void loop(){
  button_crsr.Update(); 
   if(button_crsr.clicks == 1){
     COM1CRSR.once();
-    Serial.println("COM1CRSR");
+ //   Serial.println("COM1CRSR"); //debuging code
  }
   
 button_rngdn.Update();
   if(button_rngdn.clicks == 1){
     RNGDN.once();
-    Serial.println("RNGDN");
+//  Serial.println("RNGDN");//debuging code
   }
 
   button_rngup.Update();
   if(button_rngup.clicks == 1){
     RNGUP.once();
-    Serial.println("RNGUP");
+//    Serial.println("RNGUP"); //debuging code
   }
 
   button_D.Update();
   if(button_D.clicks == 1){
     DIRECT.once();
-    Serial.println("Direct");
+    //Serial.println("Direct"); //debuging code
   }
   button_Menu.Update();
   if(button_Menu.clicks == 1){
     MENU.once();
-    Serial.println("Menu");
+    //Serial.println("Menu");//debuging code
   }
   button_CLR.Update();
   if(button_CLR.clicks == 1){
     CLR.once();
-    Serial.println("CLR");
+    //Serial.println("CLR");//debuging code
   }
   button_CDI.Update();
   if(button_CDI.clicks == 1){
     CDI.once();
-    Serial.println("CDI");
+    //Serial.println("CDI"); //debuging code
   }
   
   button_OBS.Update();
   if(button_OBS.clicks == 1){
     OBS.once();
-    Serial.println("OBS");
+    //Serial.println("OBS");//debuging code
   }
 
   button_MSG.Update();
   if(button_MSG.clicks == 1){
     MSG.once();
-    Serial.println("MSG");
+    //Serial.println("MSG");//debuging code
   }
 
   button_FLP.Update();
   if(button_FLP.clicks == 1){
     FLP.once();
-    Serial.println("FLP");
+    //Serial.println("FLP"); //debuging code
   }
 
 
