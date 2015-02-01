@@ -4,7 +4,7 @@
 
 ** WARNING THIS CODE IS AWFUL! **
 
-I take no resonsiblity for killing for your Teensy, kittens or making you crash in XPlane :)
+I take no resonsiblity for killing for your Teensy or kittens 
 
 ** WARNING THIS CODE IS AWFUL **
 
