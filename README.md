@@ -25,6 +25,11 @@ just a vague idea of what it should look like as fritzing doesn't have the corre
 
 * 12 Buttons Non lactching type
 * 1 Dual Rotary encoders with Push Button 
-or
+* or
 * 2 Single Rotary encoders with 1 with push button
 * teensy 3.1 Board https://www.pjrc.com/store/teensy31.html
+* Project case * no idea what size as haven't got that far yet *
+* Bread Board
+* wire
+* header pins
+* luck!
