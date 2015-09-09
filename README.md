@@ -4,11 +4,6 @@
 
 ** WARNING THIS CODE IS AWFUL! **
 
-I take no resonsiblity for killing for your Teensy or kittens 
-
-** WARNING THIS CODE IS AWFUL **
-
-
 My nemesis on XPlane 10 is using the dials on the GPS to try to enter data. so I've made a hardware interface to the gps1 module.
 
 so far 11 buttons and 2 rotary encoders wired to simulate the 10 buttons and the button on the dual rotary encoder.
